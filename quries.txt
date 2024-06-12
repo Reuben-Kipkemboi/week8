@@ -1,0 +1,18 @@
+--Most common type--
+SELECT type, COUNT(*) as count
+FROM netflix_titles
+GROUP BY type
+ORDER BY count DESC;
+
+--popular genres in different countries--
+SELECT country, listed_in, COUNT(*) as count
+FROM netflix_titles
+GROUP BY country, listed_in
+ORDER BY count DESC;
+
+--year with most releases--
+SELECT release_year, COUNT(*) as count
+FROM week8.netflix_titles
+WHERE date_added IS NOT NULL
+GROUP BY release_year
+ORDER BY release_year DESC;
