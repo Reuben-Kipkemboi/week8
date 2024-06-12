@@ -30,4 +30,7 @@ GROUP BY country, listed_in
 ORDER BY count DESC; 
 }
 ```
+- Year with most releases?
+ - 2021 happens to be the year with the most releases.
 
+![Year](images/year.png "Year with most releases")
